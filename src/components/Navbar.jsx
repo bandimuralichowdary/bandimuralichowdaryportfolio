@@ -90,39 +90,39 @@ export default function Navbar() {
         </div>
       </div>
 
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            className="fixed inset-0 bg-black/50 z-40 flex justify-center items-center"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+     <AnimatePresence>
+  {isOpen && (
+    <motion.div
+      className="fixed inset-0 bg-black/50 z-40 flex justify-center items-start pt-24"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      <ul className="flex flex-col gap-4 bg-white/10 backdrop-blur-3xl p-6 rounded-2xl shadow-2xl w-[85%] max-w-sm">
+        {links.map((link, index) => (
+          <motion.li
+            key={link.id}
+            initial={{ x: -40, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: -40, opacity: 0 }}
+            transition={{ delay: index * 0.05 }}
           >
-            <ul className="flex flex-col gap-6 bg-white/10 backdrop-blur-3xl p-10 rounded-3xl shadow-2xl">
-              {links.map((link, index) => (
-                <motion.li
-                  key={link.id}
-                  initial={{ x: -50, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  exit={{ x: -50, opacity: 0 }}
-                  transition={{ delay: index * 0.05 }}
-                >
-                  <button
-                    onClick={() => handleLinkClick(link.id)}
-                    className={`text-3xl font-bold transition-colors ${
-                      activeSection === link.id
-                        ? "text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-indigo-500"
-                        : "text-white"
-                    }`}
-                  >
-                    {link.label}
-                  </button>
-                </motion.li>
-              ))}
-            </ul>
-          </motion.div>
-        )}
-      </AnimatePresence>
+            <button
+              onClick={() => handleLinkClick(link.id)}
+              className={`text-2xl font-bold transition-colors ${
+                activeSection === link.id
+                  ? "text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-indigo-500"
+                  : "text-white"
+              }`}
+            >
+              {link.label}
+            </button>
+          </motion.li>
+        ))}
+      </ul>
+    </motion.div>
+  )}
+</AnimatePresence>
     </motion.nav>
   );
 }
