@@ -1,0 +1,47 @@
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Logo animation upgrade */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 3em #e100ffaa);
+  transform: scale(1.1) rotate(5deg);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 3em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 18s linear;
+  }
+}
+
+/* Form & input luxury styling */
+input, textarea, select {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  color: #f5f5f5;
+  backdrop-filter: blur(12px);
+  transition: all 0.3s ease;
+}
+input:focus, textarea:focus, select:focus {
+  border-color: #e100ff;
+  box-shadow: 0 0 10px #e100ff55;
+  outline: none;
+}

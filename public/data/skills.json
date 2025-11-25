@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "React",
+    "level": "Intermediate"
+  },
+  {
+    "id": 2,
+    "name": "JavaScript",
+    "level": "Advanced"
+  },
+  {
+    "id": 3,
+    "name": "TailwindCSS",
+    "level": "Intermediate"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Portfolio Website",
+    "description": "My personal interactive portfolio",
+    "skills": ["React", "TailwindCSS", "JavaScript"],
+    "github": "https://github.com/username/portfolio",
+    "live": "https://portfolio.com",
+    "documentation": ""
+  },
+  {
+    "id": 2,
+    "title": "Toxic Comment Detection",
+    "description": "ML project to detect online toxicity",
+    "skills": ["Python", "SVM", "RandomForest"],
+    "github": "https://github.com/username/toxic-comment",
+    "live": "",
+    "documentation": "https://link-to-paper.com"
+  }
+]
