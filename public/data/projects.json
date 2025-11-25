@@ -4,8 +4,8 @@
     "title": "Portfolio Website",
     "description": "My personal interactive portfolio",
     "skills": ["React", "TailwindCSS", "JavaScript"],
-    "github": "https://github.com/username/portfolio",
-    "live": "https://portfolio.com",
+    "github": "https://github.com/bandimuralichowdary/bandimuralichowdaryportfolio",
+    "live": "https://bandimuralichowdaryportfolio.vercel.app/",
     "documentation": ""
   },
   {
@@ -15,6 +15,6 @@
     "skills": ["Python", "SVM", "RandomForest"],
     "github": "https://github.com/username/toxic-comment",
     "live": "",
-    "documentation": "https://link-to-paper.com"
+    "documentation": "https://drive.google.com/drive/folders/1LzvS1gODymM5pn_ui0mwWeIgmsMnPMQo?usp=sharing"
   }
 ]
